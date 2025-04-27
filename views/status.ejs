@@ -13,6 +13,15 @@
     <p>Nuker Bot: ✅ Online</p>
     <p>Spammer Bot: ✅ Online</p>
   </div>
+  <p>👁️ Website Views: <span id="visitor-counter">Loading...</span></p>
+
+<script>
+fetch('https://api.countapi.xyz/hit/kynbots/statuspage')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('visitor-counter').innerText = data.value;
+  });
+</script>
   <div class="button-container">
     <a href="https://website-p070.onrender.com/admin/login" target="_blank">
       <button class="admin-button">Admin Dashboard</button>
