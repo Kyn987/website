@@ -30,4 +30,22 @@ body {
   .error {
     color: red;
   }
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .admin-button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-button:hover {
+    background-color: #17a74a;
+  }
   
