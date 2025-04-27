@@ -20,7 +20,8 @@ fetch('https://api.countapi.xyz/hit/kynbots/statuspage')
   .then(response => response.json())
   .then(data => {
     document.getElementById('visitor-counter').innerText = data.value;
-  });
+  })
+  .catch(err => console.error('Visitor counter error:', err));
 </script>
   <div class="button-container">
     <a href="https://website-p070.onrender.com/admin/login" target="_blank">
